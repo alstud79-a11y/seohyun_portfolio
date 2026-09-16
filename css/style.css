@@ -5453,3 +5453,78 @@ body.reference-real .film-player.vertical iframe#filmVideo{
   }
 }
 
+
+/* =========================================================
+   MOBILE HERO ALIGNMENT FIX ONLY — 2026-09-16
+   ========================================================= */
+@media (max-width: 620px) {
+  body.reference-real .hero {
+    min-height: 680px !important;
+    padding: 86px 22px 42px !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    row-gap: 0 !important;
+    align-content: start !important;
+  }
+
+  body.reference-real .hero-keyword {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    position: static !important;
+    width: 100% !important;
+    justify-content: center !important;
+    gap: 13px !important;
+    margin: 46px 0 10px !important;
+    font-size: 7px !important;
+    white-space: nowrap !important;
+  }
+
+  body.reference-real .hero-title,
+  body.reference-real .hero-letter-title {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: 13vw !important;
+    line-height: .76 !important;
+    text-align: left !important;
+    align-self: start !important;
+  }
+
+  body.reference-real .hero-title span,
+  body.reference-real .hero-letter-title .hero-word {
+    display: block !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
+
+  body.reference-real .hero-letter-title .hero-word-last {
+    margin-top: -.08em !important;
+    margin-left: 0 !important;
+  }
+
+  body.reference-real .hero-creative-stage {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+    width: 280px !important;
+    max-width: 78vw !important;
+    height: 280px !important;
+    margin: 42px auto 0 !important;
+    justify-self: center !important;
+    align-self: start !important;
+  }
+}
+
+@media (max-width: 390px) {
+  body.reference-real .hero-title,
+  body.reference-real .hero-letter-title {
+    font-size: 12.6vw !important;
+  }
+
+  body.reference-real .hero-creative-stage {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}

@@ -51,7 +51,7 @@ const filmData = {
   brand: {
     eyebrow: "BRAND FILM · 2026",
     title: "16BRAND<br><em>IN MOTION</em>",
-    description: "16BRAND의 발랄한 컬러와 제품 무드를 짧은 브랜드 필름으로 재구성했습니다. 이미지 제작부터 장면 구성, 편집까지 직접 연결해 웹 프로젝트의 분위기를 영상으로 확장했습니다.",
+    description: "브랜드의 밝고 유쾌한 이미지를 짧은 영상 흐름으로 구성했습니다.",
     meta: "Planning · AI Image · Editing",
     src: "assets/16brand-film.mp4",
     youtubeId: "IdYaVvwsIeU",
