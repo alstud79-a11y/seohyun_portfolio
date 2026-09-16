@@ -5474,7 +5474,7 @@ body.reference-real .film-player.vertical iframe#filmVideo{
     width: 100% !important;
     justify-content: center !important;
     gap: 13px !important;
-    margin: 46px 0 10px !important;
+    margin: 46px 0 22px !important;
     font-size: 7px !important;
     white-space: nowrap !important;
   }
@@ -5486,7 +5486,7 @@ body.reference-real .film-player.vertical iframe#filmVideo{
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    font-size: 13vw !important;
+    font-size: 12.6vw !important;
     line-height: .76 !important;
     text-align: left !important;
     align-self: start !important;
@@ -5501,7 +5501,7 @@ body.reference-real .film-player.vertical iframe#filmVideo{
   }
 
   body.reference-real .hero-letter-title .hero-word-last {
-    margin-top: -.08em !important;
+    margin-top: -.03em !important;
     margin-left: 0 !important;
   }
 
@@ -5511,7 +5511,7 @@ body.reference-real .film-player.vertical iframe#filmVideo{
     width: 280px !important;
     max-width: 78vw !important;
     height: 280px !important;
-    margin: 42px auto 0 !important;
+    margin: 50px auto 0 !important;
     justify-self: center !important;
     align-self: start !important;
   }
@@ -5520,7 +5520,7 @@ body.reference-real .film-player.vertical iframe#filmVideo{
 @media (max-width: 390px) {
   body.reference-real .hero-title,
   body.reference-real .hero-letter-title {
-    font-size: 12.6vw !important;
+    font-size: 12.3vw !important;
   }
 
   body.reference-real .hero-creative-stage {
