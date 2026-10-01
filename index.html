@@ -82,8 +82,14 @@
           <div class="award-mark">AWARD · 2026</div>
           <div class="award-copy">
             <span class="status-kicker">SELECTED AWARD</span>
-            <h3>화장품 콘텐츠 공모전</h3>
-            <strong class="award-result">장려상 수상</strong>
+            <h3>2026 한글 AI 아트 창작 공모전</h3>
+            <strong class="award-result">최우수상</strong>
+            <p>AI 이미지와 영상을 활용해 기획·제작한 콘텐츠 공모전 수상작입니다.</p>
+          </div>
+          <div class="award-copy">
+            <span class="status-kicker">SELECTED AWARD</span>
+            <h3>2026 숏폼 영상 공모전</h3>
+            <strong class="award-result">장려상</strong>
             <p>AI 이미지와 영상을 활용해 기획·제작한 콘텐츠 공모전 수상작입니다.</p>
           </div>
         </div>
@@ -211,9 +217,9 @@
       </div>
 
       <div class="film-tabs reveal" role="tablist" aria-label="영상 작품 선택">
-        <button class="film-tab active" type="button" role="tab" aria-selected="true" data-film="brand">01 · 16BRAND</button>
+        <button class="film-tab active" type="button" role="tab" aria-selected="true" data-film="hunmin">01 · 훈민정음 <span class="award-tab-mark">최우수상</span></button>
         <button class="film-tab" type="button" role="tab" aria-selected="false" data-film="skin">02 · SKIN AIRPORT <span class="award-tab-mark">AWARD WINNER</span></button>
-        <button class="film-tab" type="button" role="tab" aria-selected="false" data-film="hunmin">03 · 훈민정음</button>
+        <button class="film-tab" type="button" role="tab" aria-selected="false" data-film="brand">03 · 16BRAND</button>
       </div>
 
       <div class="film-panel reveal">
@@ -227,21 +233,21 @@
           <span class="award-title-small">AWARD WINNER</span>
           <span class="award-laurel">✦</span>
         </div>
-        <strong>장려상 수상</strong>
-        <span class="award-sub">2026 화장품 안전성평가제도<br>숏폼 공모전</span>
+        <strong id="filmAwardResult">최우수상 수상</strong>
+        <span class="award-sub" id="filmAwardSub">2026 한글 AI 아트<br>창작 공모전</span>
       </div>
-      <img class="award-medal-image" src="assets/award-medal.png" alt="장려상 수상 메달">
+      <img class="award-medal-image" id="filmAwardImage" src="assets/award-medal.png" alt="최우수상 수상 메달">
     </div>
-          <p class="small-title" id="filmEyebrow">BRAND FILM · 2026</p>
-          <h3 id="filmTitle">16BRAND<br><em>IN MOTION</em></h3>
-          <p id="filmDescription">브랜드의 밝고 유쾌한 이미지를 짧은 영상 흐름으로 구성했습니다.</p>
-          <div class="film-tags" id="filmTags"><span>PLANNING</span><span>AI IMAGE</span><span>EDITING</span></div>
+          <p class="small-title" id="filmEyebrow">COMPETITION FILM · 2026 · 최우수상</p>
+          <h3 id="filmTitle">훈민정음<br><em>THE CREATION OF HANGEUL</em></h3>
+          <p id="filmDescription">훈민정음 창제의 과정과 의미를 현대적인 AI 영상 문법으로 재해석한 세로형 작품입니다. 역사적 분위기를 유지하면서 장면의 흐름과 이미지 연출이 자연스럽게 이어지도록 구성했습니다.</p>
+          <div class="film-tags" id="filmTags"><span>PLANNING</span><span>AI VIDEO</span><span>EDITING</span></div>
           
         </div>
         <div class="film-player" id="filmPlayer">
           <iframe id="filmVideo" class="film-youtube-video"
-            src="https://www.youtube-nocookie.com/embed/IdYaVvwsIeU?autoplay=1&mute=1&loop=1&playlist=IdYaVvwsIeU&controls=0&rel=0&playsinline=1"
-            title="16BRAND film"
+            src="https://www.youtube-nocookie.com/embed/bUmIUdSJQfw?autoplay=1&mute=1&loop=1&playlist=bUmIUdSJQfw&controls=0&rel=0&playsinline=1"
+            title="훈민정음 film"
             allow="autoplay; encrypted-media; picture-in-picture"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
