@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://dipping-book.onrender.com" crossorigin>
   <link rel="dns-prefetch" href="//dipping-book.onrender.com">
+  <link rel="stylesheet" href="css/awards.css">
 </head>
 <body class="reference-real">
   <header class="header" id="header">
@@ -80,13 +81,13 @@
         </div>
         <div class="award-highlight about-status-card reveal">
           <div class="award-mark">AWARD · 2026</div>
-          <div class="award-copy">
+          <div class="award-copy" role="button" tabindex="0" data-award-film="hunmin" aria-haspopup="dialog" aria-label="훈민정음 최우수상 수상 사진 보기">
             <span class="status-kicker">SELECTED AWARD</span>
             <h3>2026 한글 AI 아트 창작 공모전</h3>
             <strong class="award-result">최우수상</strong>
             <p>AI 이미지와 영상을 활용해 기획·제작한 콘텐츠 공모전 수상작입니다.</p>
           </div>
-          <div class="award-copy">
+          <div class="award-copy" role="link" tabindex="0" data-award-film="skin" aria-label="SKIN AIRPORT 장려상 수상작 보기">
             <span class="status-kicker">SELECTED AWARD</span>
             <h3>2026 숏폼 영상 공모전</h3>
             <strong class="award-result">장려상</strong>
@@ -253,6 +254,15 @@
             allowfullscreen></iframe>
         </div>
       </div>
+
+      <div class="hunmin-award-gallery" id="hunminAwardGallery" aria-label="훈민정음 수상 사진">
+        <p class="small-title">AWARD · 2026</p>
+        <div class="hunmin-award-photos">
+          <button class="hunmin-award-photo" type="button" aria-label="최우수상 상장 사진 크게 보기"><img src="assets/hunmin-award-certificate.png" alt="최우수상 상장 사진" loading="lazy"><span>최우수상 상장 사진</span></button>
+          <button class="hunmin-award-photo" type="button" aria-label="시상식 단독사진 크게 보기"><img src="assets/hunmin-award-portrait.png" alt="시상식 단독사진" loading="lazy"><span>시상식 단독사진</span></button>
+          <button class="hunmin-award-photo" type="button" aria-label="시상식 단체사진 크게 보기"><img src="assets/hunmin-award-group.png" alt="시상식 단체사진" loading="lazy"><span>시상식 단체사진</span></button>
+        </div>
+      </div>
     </section>
 
     <!-- 경력 및 교육 -->
@@ -311,7 +321,7 @@
   <!-- Three.js 3D Library & Creator Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="js/hero-creator-3d.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=awards-20261013"></script>
   <script>
     // DippingBook(Render) cold-start 완화: 포트폴리오 진입 후 백그라운드에서 서버를 미리 깨웁니다.
     window.addEventListener('load', () => {
@@ -323,6 +333,19 @@
 <a href="#top" class="back-to-top" aria-label="맨 위로 이동">
           <span>TOP</span><b>↑</b>
         </a>
+
+  <dialog class="award-photo-dialog" id="awardPhotoDialog" aria-label="수상 사진 확대 보기">
+    <button class="award-photo-close" type="button" aria-label="사진 닫기">닫기 ×</button>
+    <img id="awardPhotoFull" alt="">
+    <p id="awardPhotoCaption"></p>
+    <div class="award-modal-actions" aria-label="수상 사진 선택">
+      <button type="button" data-award-photo="0" aria-pressed="true">상장</button>
+      <button type="button" data-award-photo="1" aria-pressed="false">단독사진</button>
+      <button type="button" data-award-photo="2" aria-pressed="false">단체사진</button>
+      <button type="button" id="awardViewFilm">훈민정음 작품 보기 ↗</button>
+    </div>
+  </dialog>
+  <script src="js/awards.js?v=award-modal-2"></script>
 </body>
 </html>
 

@@ -76,7 +76,7 @@ const filmData = {
     src: "assets/hunminjeongeum-film.mp4",
     youtubeId: "bUmIUdSJQfw",
     vertical: true,
-    index: "03", tags: ["PLANNING","AI VIDEO","EDITING"]
+    index: "01", tags: ["PLANNING","AI VIDEO","EDITING"]
   }
 };
 
