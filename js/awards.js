@@ -1,7 +1,5 @@
 /* Award links reuse the existing film tab switching and original video sources. */
 (() => {
-  const gallery = document.getElementById('hunminAwardGallery');
-  const tabs = document.querySelectorAll('.film-tab');
   const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   document.querySelectorAll('[data-award-film]').forEach(link => {
@@ -27,18 +25,15 @@
     });
   });
 
-  const syncGallery = () => {
-    gallery.hidden = document.querySelector('.film-tab.active')?.dataset.film !== 'hunmin';
-  };
-  const observer = new MutationObserver(syncGallery);
-  tabs.forEach(tab => observer.observe(tab, { attributes: true, attributeFilter: ['class'] }));
-  syncGallery();
-
   const dialog = document.getElementById('awardPhotoDialog');
   const full = document.getElementById('awardPhotoFull');
   let opener = null;
   let previousOverflow = '';
-  const photos = [...gallery.querySelectorAll('.hunmin-award-photo img')];
+  const photos = [
+    { src: 'assets/hunmin-award-certificate.png', alt: '최우수상 상장 사진' },
+    { src: 'assets/hunmin-award-portrait.png', alt: '시상식 단독사진' },
+    { src: 'assets/hunmin-award-group.png', alt: '시상식 단체사진' }
+  ];
   let photoIndex = 0;
   const renderPhoto = () => {
     const image = photos[photoIndex];
@@ -74,11 +69,6 @@
     const offset = document.getElementById('header').getBoundingClientRect().height + 20;
     window.scrollTo({top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: reducedMotion() ? 'instant' : 'smooth'});
     document.querySelector('.film-tab[data-film="hunmin"]').focus({preventScroll:true});
-  });
-  gallery.querySelectorAll('.hunmin-award-photo').forEach(button => {
-    button.addEventListener('click', () => {
-      openAwardPhoto(photos.indexOf(button.querySelector('img')), button);
-    });
   });
   dialog.querySelector('.award-photo-close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => {
